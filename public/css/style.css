@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+html,
+body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+main {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    border: thin solid red;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/* header på publicsiden */
+
+#publicheader {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(darkred 20%, black 80%);
+    /* background: black; */
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~  Start Login header  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#adminheader {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(darkred 20%, black 80%);
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/* Logo */
+
+#logo {
+    /*background: white;*/
+    display: inline-block;
+    height: 100%;
+    margin-top: 3px;
+    margin-left: 10px;
+    float: left;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#title {
+    color: white;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/* Navi informatiom */
+
+#publicnavigationbar {
+    height: 40px;
+    font-size: 38px;
+    line-height: 100%;
+    min-width: 20%;
+    margin: auto;
+    text-align: center;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.menuitem {
+    /*display: inline;*/
+    padding: 0 5px;
+    margin: 0 5px;
+    height: 100%;
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(darkred 20%, black 80%);
+}
+
+.menuitem:hover {
+    border-top: solid thin white;
+}
+
+.itemActive {
+    border-top: solid thin white;
+}
+
+.menuitem a {
+    color: white;
+}
+
+article.article {
+    width: 46%;
+    float: left;
+    padding: 18px;
+    margin: 0 2%;
+    border: thin solid #ccc;
+}
+
+#content {
+    padding: 10px;
+}
+
+
+/*~~~~ Start Loginform  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.con1 img {
+    height: auto;
+    /* Højden må ikke afvige fra billedets dimensioner - vis altid det samme format */
+    margin-top: 2.5%;
+    /* Positioner billedet i toppen */
+    left: 0;
+    /* Positioner også billedet 10% fra venstre*/
+    right: 0;
+    /* Positioner også billedet 10% fra højre*/
+    padding: 0 10%;
+    min-height: 90%;
+    /* Minimumshøjden er billedets 'naturlige' højde */
+    min-width: 960px;
+    /* Minimumsbredde, så billedet ikke tvinges lavere */
+    position: fixed;
+    /* Billedet forbliver stationært */
+    width: 100%;
+    /* Bredden skal fylde hele browseren - med mindre denne er mindre end 1024 pixels, som defineret ovenfor  */
+    z-index: -1;
+    /* Billedet skal være bagved andet indhold. Denne skal ændres hvis der er andre elementer med lavere z-akse indhold. */
+}
+
+#loginform {
+    width: 40%;
+    margin: 50px auto 50px auto;
+    padding: 3%;
+    /* border: thin solid red; */
+    background: #eeeeee;
+}
+
+#loginform .inputElements {
+    display: block;
+    text-align: center;
+    margin: 4px auto;
+}
+
+.msg {
+    text-align: center;
+    color: red
+}
+
+h4 {
+    text-align: center;
+}
+
+
+/*~~~~ Start Footer  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    height: 30px;
+    width: 80%;
+    margin-left: 10%;
+    background: linear-gradient(darkred 20%, black 80%);
+    color: white;
+    text-align: center;
+}

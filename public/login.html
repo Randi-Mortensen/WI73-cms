@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="../misc/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div class="con1">
+            <img src="../img/internet.png" class="bg" />
+        </div>
+        <header id="adminheader">
+            <span id="logo">
+                <img src="img/logo.png" alt="">
+            </span>
+            <div id="title">Login</div>
+        </header>
+        <!-- Da jeg bruger modulet 'multiparty' til at tage imod de afsendte form-data
+             er det vigtigt at formens enctype er "multipart/form-data", ellers virker
+             det ikke. -->
+        <form id="loginform" method="post" action="/login" enctype="multipart/form-data">
+            <h4>Login påkrævet</h4>
+
+
+            <!--msg-->
+            <input class="inputElements" type="text" name="username" placeholder="Brugernavn" autofocus value="admin">
+            <input class="inputElements" type="password" name="password" placeholder="Kodeord" value="admin">
+            <button class="inputElements" type="submit">Login</button>
+        </form>
+    </main>
+    <footer id="footer">
+        <h4>©Copyright 2017 - Zyberdata v. Randi Mortensen</h4>
+    </footer>
+</body>
+
+</html>

@@ -87,8 +87,7 @@ Vælg new ssh key.
 
 Sæt koden fra putty ind.
 
-Og gem. 
-
+Og gem
 
 ## 6. Opret en mappe til din applikation
 
@@ -123,7 +122,7 @@ commit all
 pull
 
 ### Putty
-git pull git@github.com:brugernavn/repository
+git pull git@github.com:Randi-Mortensen/WI73-cms
 
 # --------------------------------------------------------------------------------------------------
 <a name="top"></top>
